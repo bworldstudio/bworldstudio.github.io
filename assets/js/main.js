@@ -134,7 +134,7 @@ function initNavbar() {
   const header = document.querySelector('.site-header') || document.querySelector('.navbar');
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navLinks = document.querySelector('.nav-links');
-  const links = document.querySelectorAll('.nav-link');
+  const links = navLinks ? navLinks.querySelectorAll('a') : [];
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 25) {

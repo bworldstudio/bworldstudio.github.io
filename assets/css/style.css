@@ -206,6 +206,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   padding: 22px 0;
   min-height: 112px;
 }
@@ -216,6 +217,8 @@ a {
   align-items: center;
   gap: 16px;
   text-decoration: none;
+  min-width: 0;
+  flex-shrink: 0;
 }
 
 .brand-logo-img {
@@ -253,6 +256,10 @@ a {
   list-style: none;
 }
 
+.mobile-nav-item {
+  display: none;
+}
+
 .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
@@ -286,6 +293,7 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 /* Mobile Drawer Toggle */
@@ -922,27 +930,32 @@ a {
   }
 }
 
-/* Mobile Devices (max-width: 768px) */
+/* Mobile Devices & Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .nav-container {
     width: calc(100% - 32px);
-    padding: 14px 0;
-    min-height: 96px;
+    padding: 12px 0;
+    min-height: 90px;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 12px;
   }
 
   .brand-logo-img {
-    width: 68px;
-    height: 68px;
-    border-radius: 17px;
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
   }
 
   .brand-name {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
   .nav-links {
     position: fixed;
-    top: 98px;
+    top: 92px;
     left: 12px;
     right: 12px;
     background: rgba(10, 11, 19, 0.98);
@@ -964,6 +977,14 @@ a {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
+  }
+
+  .mobile-nav-item {
+    display: block;
+    margin-top: 8px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-subtle);
+    width: 100%;
   }
 
   .mobile-toggle {
@@ -998,26 +1019,51 @@ a {
   }
 }
 
-/* Small Screens (max-width: 480px) */
-@media (max-width: 480px) {
+/* Mobile Phones (max-width: 580px) */
+@media (max-width: 580px) {
   .nav-container {
     width: calc(100% - 24px);
     padding: 10px 0;
-    min-height: 84px;
+    min-height: 80px;
+    gap: 8px;
   }
 
-  .brand-name {
-    font-size: 1.15rem;
+  .brand {
+    gap: 10px;
   }
 
   .brand-logo-img {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  /* Compact Google Play Icon Button on Phones — Prevents Overlap */
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-play-btn {
+    padding: 8px 10px;
+    min-height: 38px;
+    border-radius: 10px;
+  }
+
+  .nav-play-btn .btn-play-text {
+    display: none;
+  }
+
+  .nav-play-btn svg {
+    width: 18px;
+    height: 18px;
   }
 
   .nav-links {
-    top: 86px;
+    top: 82px;
   }
 
   .container {
@@ -1049,5 +1095,23 @@ a {
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Extra Small Phones (max-width: 360px) */
+@media (max-width: 360px) {
+  .nav-container {
+    width: calc(100% - 16px);
+    gap: 6px;
+  }
+
+  .brand-logo-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .brand-name {
+    font-size: 0.98rem;
   }
 }
