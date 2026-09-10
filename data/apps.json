@@ -1,0 +1,18 @@
+[
+  {
+    "id": "com.ardrawing.trace.sketch",
+    "title": "AR Drawing - Trace & Sketch",
+    "tagline": "Creative mobile application by BWorld Studio.",
+    "description": "Creative mobile application by BWorld Studio.",
+    "icon": "assets/images/com_ardrawing_trace_sketch_icon.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ardrawing.trace.sketch&hl=en",
+    "category": "Android App",
+    "badge": "Live on Google Play",
+    "features": [
+      "Optimized for Android smartphones and tablets",
+      "Intuitive and modern user interface",
+      "Regular feature updates and performance stability"
+    ],
+    "isLive": true
+  }
+]
