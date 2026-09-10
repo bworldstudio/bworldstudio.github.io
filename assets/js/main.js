@@ -107,9 +107,8 @@ function renderAppCards(container, apps) {
           ${featuresHtml ? `<ul class="card-features">${featuresHtml}</ul>` : ''}
 
           <div class="card-footer">
-            <a href="${escapeHtml(safePlayUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-play">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M3.609 1.814L13.792 12 3.61 22.186a2.433 2.433 0 0 1-.22-.988V2.802c0-.36.08-.698.22-.988zM15.207 13.414l2.455 2.456-11.45 6.611 8.995-9.067zm0-2.828L6.212 1.519l11.45 6.611-2.455 2.456zm1.414 1.414l3.535-2.041c1.125-.65 1.125-1.71 0-2.36L16.621 8.57l1.793 1.793a2.3 2.3 0 0 1 0 3.254l-1.793 1.793 3.535-2.041c1.125-.65 1.125-1.71 0-2.36z"/></svg>
-              <span>Download on Google Play</span>
+            <a href="${escapeHtml(safePlayUrl)}" target="_blank" rel="noopener noreferrer" class="play-badge-link" aria-label="Get ${escapeHtml(app.title)} on Google Play">
+              <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" height="52" style="height: 52px; width: auto;" />
             </a>
           </div>
         </div>

@@ -371,6 +371,28 @@ a {
   transform: translateY(-2px);
 }
 
+/* Official Google Play Badge Container */
+.play-badge-link {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+  border-radius: 8px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.play-badge-link:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 6px 20px rgba(0, 240, 255, 0.35));
+}
+
+.play-badge-link img {
+  display: block;
+  height: 52px;
+  width: auto;
+  border-radius: 8px;
+}
+
 .btn-sm {
   padding: 8px 18px;
   font-size: 0.85rem;
@@ -1033,33 +1055,21 @@ a {
   }
 
   .brand-logo-img {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     border-radius: 12px;
   }
 
   .brand-name {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
-  /* Compact Google Play Icon Button on Phones — Prevents Overlap */
   .nav-actions {
     gap: 8px;
   }
 
-  .nav-play-btn {
-    padding: 8px 10px;
-    min-height: 38px;
-    border-radius: 10px;
-  }
-
-  .nav-play-btn .btn-play-text {
-    display: none;
-  }
-
-  .nav-play-btn svg {
-    width: 18px;
-    height: 18px;
+  .play-badge-link img {
+    height: 46px;
   }
 
   .nav-links {
