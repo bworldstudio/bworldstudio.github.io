@@ -505,6 +505,10 @@ a {
 }
 
 .app-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(20px, 3.5vw, 36px);
+  align-items: start;
   background: var(--grad-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -1013,6 +1017,7 @@ a {
     display: block;
   }
 
+  .app-card,
   .app-card.flagship {
     grid-template-columns: 1fr;
     gap: 18px;

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ================= Dynamic App Rendering Mechanism ================= */
-// Default fallback app in case of local file:// protocol or offline access
+// Default fallback apps in case of local file:// protocol or offline access
 const DEFAULT_APPS = [
   {
     id: "com.ardrawing.trace.sketch",
@@ -32,6 +32,22 @@ const DEFAULT_APPS = [
       "Diverse sketch template categories to practice drawing",
       "Adjustable outline transparency to suit your drawing setup",
       "Built-in flashlight support for clear drawing in dim settings"
+    ]
+  },
+  {
+    id: "com.shradhanjali.memorialpostermaker",
+    title: "Shradhanjali Poster Maker",
+    tagline: "Create Shradhanjali, Besanu & Memorial Cards in Hindi, Gujarati & English.",
+    description: "Create respectful memorial cards, condolence banners, and tribute posters in minutes with customized photos, frames, multi-language support, and PDF export.",
+    icon: "assets/images/com_shradhanjali_memorialpostermaker_icon.png",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.shradhanjali.memorialpostermaker",
+    category: "Art & Design",
+    badge: "Live on Google Play",
+    features: [
+      "Create Shradhanjali, Besanu, and Condolence cards in minutes",
+      "Full support for Hindi, Gujarati, and English languages",
+      "Custom photo cropping shapes: Circle, Oval, Square, and Borders",
+      "Export and share directly in high-resolution JPG or PDF format"
     ]
   }
 ];

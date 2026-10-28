@@ -2,16 +2,34 @@
   {
     "id": "com.ardrawing.trace.sketch",
     "title": "AR Drawing - Trace & Sketch",
-    "tagline": "Creative mobile application by BWorld Studio.",
-    "description": "Creative mobile application by BWorld Studio.",
+    "tagline": "Draw with AR! Trace any image, sketch easily, and improve your drawing skills.",
+    "description": "Draw with AR! Trace any image, sketch easily, and improve your drawing skills.",
     "icon": "assets/images/com_ardrawing_trace_sketch_icon.png",
     "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ardrawing.trace.sketch&hl=en",
-    "category": "Android App",
+    "category": "Art & Design",
     "badge": "Live on Google Play",
     "features": [
-      "Optimized for Android smartphones and tablets",
-      "Intuitive and modern user interface",
-      "Regular feature updates and performance stability"
+      "Camera overlay projection onto paper for effortless tracing",
+      "Diverse sketch template categories to practice drawing",
+      "Adjustable outline transparency to suit your drawing setup",
+      "Built-in flashlight support for clear drawing in dim settings"
+    ],
+    "isLive": true
+  },
+  {
+    "id": "com.shradhanjali.memorialpostermaker",
+    "title": "Shradhanjali Poster Maker",
+    "tagline": "Create Shradhanjali, Besanu & Memorial Cards in Hindi, Gujarati & English.",
+    "description": "Create Shradhanjali, Besanu & Memorial Cards in Hindi, Gujarati & English.",
+    "icon": "assets/images/com_shradhanjali_memorialpostermaker_icon.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.shradhanjali.memorialpostermaker&hl=en",
+    "category": "Art & Design",
+    "badge": "Live on Google Play",
+    "features": [
+      "Create Shradhanjali, Besanu, and Condolence cards in minutes",
+      "Full support for Hindi, Gujarati, and English languages",
+      "Custom photo cropping shapes: Circle, Oval, Square, and Borders",
+      "Export and share directly in high-resolution JPG or PDF format"
     ],
     "isLive": true
   }

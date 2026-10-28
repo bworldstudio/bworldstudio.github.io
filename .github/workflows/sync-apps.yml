@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       package_id:
-        description: 'Google Play Package ID to sync (e.g. com.ardrawing.trace.sketch)'
-        required: true
-        default: 'com.ardrawing.trace.sketch'
+        description: 'Optional Google Play Package ID to sync (leave blank to auto-sync all BWorld Studio apps)'
+        required: false
+        default: ''
 
 jobs:
   sync:
@@ -30,10 +30,10 @@ jobs:
           INPUT_PACKAGE_ID: ${{ github.event.inputs.package_id }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$INPUT_PACKAGE_ID" ]; then
             node scripts/sync-apps.js "$INPUT_PACKAGE_ID"
           else
-            node scripts/sync-apps.js com.ardrawing.trace.sketch
+            node scripts/sync-apps.js
           fi
 
       - name: Commit and push changes
